@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create User Account</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-900 text-white min-h-screen flex items-center justify-center">
+  <div class="w-full max-w-md p-8 bg-zinc-800 rounded-lg shadow-lg">
+    <h1 class="text-3xl font-semibold text-center mb-6">upload your profile image</h1>
+    
+
+    <!-- for using the multer we us enctype="multipart/form-data   iska mtlb hota hai we are sending our data in chunks -->
+    <form autocomplete="off" action="/upload" method="post" class="space-y-4" enctype="multipart/form-data">
+      <input type="file" name="image"  />
+      <input class="px-4 py-2 rounded-md bg-blue-500" type="submit" value="upload">
+    </form>
+  </div>
+</body>
+</html>
